@@ -9,6 +9,15 @@
 <html>
 <head>
     <title>修改账户</title>
+    <script src="../js/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                alert("修改成功")
+            });
+        });
+    </script>
 </head>
 <body>
 <h3>修改账户</h3>
@@ -17,7 +26,7 @@
     请输入您要删除的id：<input type="text"name="id"><br/>
     请输入修改后的姓名：<input type="text"name="name"><br/>
     请输入修改后的金额：<input type="text"name="money"><br/>
-    <input type="submit" value="修改">
+    <input id="btn" type="submit" value="修改">
 </form>
 
 <a href="../account/zhu">返回主菜单</a>
